@@ -1,5 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
+let num1;
+let num2;
 
 while(true) {
     console.log(`-------------------------------------------
@@ -17,8 +19,8 @@ Qual a operação matemática a ser realizada?
     if(operador == 1) {
         
         while(true) {
-            const num1 = +prompt("Digite o primeiro número: ");
-            const num2 = +prompt("Digite o segundo número: ");
+            num1 = +prompt("Digite o primeiro número: ");
+            num2 = +prompt("Digite o segundo número: ");
             
             if(isNaN(num1) || isNaN(num2)) {
                 console.log("Por favor, digite apenas números!");                               
@@ -33,8 +35,8 @@ Qual a operação matemática a ser realizada?
 
         while(true) {
 
-            const num1 = +prompt("Digite o primeiro número: ");
-            const num2 = +prompt("Digite o segundo número: ");
+            num1 = +prompt("Digite o primeiro número: ");
+            num2 = +prompt("Digite o segundo número: ");
             if(isNaN(num1) || isNaN(num2)) {
                 console.log("Por favor, digite apenas números!");
                 
@@ -49,8 +51,8 @@ Qual a operação matemática a ser realizada?
 
         while(true) {
             
-            const num1 = +prompt("Digite o primeiro número: ");
-            const num2 = +prompt("Digite o segundo número: ");
+            num1 = +prompt("Digite o primeiro número: ");
+            num2 = +prompt("Digite o segundo número: ");
             if(isNaN(num1) || isNaN(num2)) {
                 console.log("Por favor, digite apenas números!");
                 
@@ -64,13 +66,13 @@ Qual a operação matemática a ser realizada?
     } else if(operador == 4) {
         while(true) {
             
-            const num1 = +prompt("Digite o primeiro número: ");
-            const num2 = +prompt("Digite o segundo número: ");
+            num1 = +prompt("Digite o primeiro número: ");
+            num2 = +prompt("Digite o segundo número: ");
             if(isNaN(num1) || isNaN(num2)) {
                 console.log("Por favor, digite apenas números!");
                 
             } else if(num2 === 0) {
-                console.log("Não é possível dividir por 0, procure a escola mais próxima");
+                console.log("Não é possível dividir por 0!");
             } else {
                 console.log(`A divisão entre ${num1} e ${num2} é ${dividir(num1, num2).toFixed(2)}`);
                 break;
@@ -80,8 +82,8 @@ Qual a operação matemática a ser realizada?
     } else if(operador == 5) {
         while(true) {
             
-            const num1 = +prompt("Digite o primeiro número: ");
-            const num2 = +prompt("Digite o segundo número: ");
+            num1 = +prompt("Digite o primeiro número: ");
+            num2 = +prompt("Digite o segundo número: ");
             if(isNaN(num1) || isNaN(num2)) {
                 console.log("Por favor, digite apenas números!");
                 
